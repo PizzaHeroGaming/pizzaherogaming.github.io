@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pizza Hero Gaming — solo indie game development. Four games and an app crafted with passion." />
+  <meta name="theme-color" content="#0f0a08" />
+  <title>Pizza Hero Gaming — Indie Games by a Solo Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='80' font-size='80'%3E%F0%9F%8D%95%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="brand" aria-label="Pizza Hero Gaming home">
+      <span class="brand-icon">🍕</span>
+      <span class="brand-text">
+        <span class="brand-name">PIZZA HERO</span>
+        <span class="brand-sub">GAMING</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#games">Games</a>
+      <a href="#app">App</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://github.com/YouPizzaHero" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.19a11 11 0 0 1 5.79 0c2.21-1.5 3.18-1.19 3.18-1.19.62 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5Z"/></svg>
+      GitHub
+    </a>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Solo Indie Developer · MMXXVI
+      </div>
+      <h1 class="hero-title">
+        Hand‑crafted games with a <span class="grad">slice of soul</span>.
+      </h1>
+      <p class="hero-lede">
+        I'm a one‑person studio building small, sharp, weirdly delicious games.
+        A 3D bullet‑heaven, a discovery‑based crafting alchemist, a roguelike dungeon crawler,
+        a semi‑idle, and a delivery tracker app — all in the wild, all from one kitchen.
+      </p>
+      <div class="hero-cta">
+        <a href="#games" class="btn btn-primary">Play the Games</a>
+        <a href="#about" class="btn btn-secondary">About the Dev</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Games shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">App released</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Dev behind it all</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating pizza slices -->
+    <div class="float float-1" aria-hidden="true">🍕</div>
+    <div class="float float-2" aria-hidden="true">🎮</div>
+    <div class="float float-3" aria-hidden="true">🕹️</div>
+    <div class="float float-4" aria-hidden="true">⭐</div>
+  </section>
+
+  <!-- GAMES -->
+  <section id="games" class="section">
+    <div class="section-header">
+      <span class="eyebrow">The Arcade</span>
+      <h2>Featured Games</h2>
+      <p class="section-lede">
+        Four titles, each a different flavor. Click any card to play, watch, or grab the source.
+      </p>
+    </div>
+
+    <div class="games-grid">
+      <!-- WALLOP -->
+      <article class="game-card featured" style="--accent: #ff5a3c;">
+        <div class="game-art" aria-hidden="true">
+          <span class="game-emoji">🍕</span>
+          <div class="game-art-glow"></div>
+          <span class="ribbon">Flagship</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta">
+            <span class="tag">3D Bullet‑Heaven</span>
+            <span class="tag">Roguelike</span>
+            <span class="tag">Three.js</span>
+          </div>
+          <h3>Wallop</h3>
+          <p>
+            You are the Pizza Delivery Hero. Fight through waves of food‑themed chaos,
+            collect upgrades, defeat three escalating bosses, and push through three stages.
+            Four playable characters, 12+ weapons, deep meta‑progression with Slices 🍕.
+          </p>
+          <div class="game-actions">
+            <a href="https://wallop-psi.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Play Now</a>
+            <a href="https://github.com/YouPizzaHero/Wallop" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ALCHEMY -->
+      <article class="game-card" style="--accent: #ffb547;">
+        <div class="game-art" aria-hidden="true">
+          <span class="game-emoji">⚗️</span>
+          <div class="game-art-glow"></div>
+        </div>
+        <div class="game-body">
+          <div class="game-meta">
+            <span class="tag">Crafting</span>
+            <span class="tag">Discovery</span>
+            <span class="tag">PWA</span>
+          </div>
+          <h3>Alchemy — The Circle of Binding</h3>
+          <p>
+            A dark alchemist's working circle. Drag elements into sigil slots, watch
+            burning ley‑lines race around the crucible, and forge 190 elements through
+            159 pair recipes and 28 hand‑authored miracles across eight rank tiers.
+          </p>
+          <div class="game-actions">
+            <a href="https://github.com/YouPizzaHero/alchemy" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Source &amp; Play</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- DUNGEON-DESCENT -->
+      <article class="game-card" style="--accent: #ef3e5b;">
+        <div class="game-art" aria-hidden="true">
+          <span class="game-emoji">⚔️</span>
+          <div class="game-art-glow"></div>
+        </div>
+        <div class="game-body">
+          <div class="game-meta">
+            <span class="tag">Roguelike</span>
+            <span class="tag">Dungeon Crawler</span>
+            <span class="tag">HTML5</span>
+          </div>
+          <h3>Dungeon Descent</h3>
+          <p>
+            A classic roguelike dungeon crawler — descend, fight, loot, repeat. Pure
+            HTML5, no install, runs anywhere. Drop in for a quick floor or commit to
+            the long crawl.
+          </p>
+          <div class="game-actions">
+            <a href="https://youpizzahero.github.io/Dungeon-Descent/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Play Now</a>
+            <a href="https://github.com/YouPizzaHero/Dungeon-Descent" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ETHAN MAKES IT -->
+      <article class="game-card" style="--accent: #6ee7c7;">
+        <div class="game-art" aria-hidden="true">
+          <span class="game-emoji">🏭</span>
+          <div class="game-art-glow"></div>
+        </div>
+        <div class="game-body">
+          <div class="game-meta">
+            <span class="tag">Semi‑Idle</span>
+            <span class="tag">Incremental</span>
+            <span class="tag">HTML5</span>
+          </div>
+          <h3>EthanMakesIt</h3>
+          <p>
+            A semi‑idle game that keeps you just engaged enough. Click, watch the
+            numbers grow, optimize the loop — chill mechanics for tabs you leave
+            open in the background.
+          </p>
+          <div class="game-actions">
+            <a href="https://youpizzahero.github.io/EthanMakesIt/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Play Now</a>
+            <a href="https://github.com/YouPizzaHero/EthanMakesIt" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Source</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- APP -->
+  <section id="app" class="section app-section">
+    <div class="app-wrap">
+      <div class="app-copy">
+        <span class="eyebrow">The App</span>
+        <h2>Delivery Tracker — the side dish.</h2>
+        <p>
+          A simple, focused web app for tracking deliveries. No bloat, no accounts to make,
+          no subscription. Just open it and start logging — runs entirely in your browser.
+        </p>
+        <ul class="bullets">
+          <li><span class="check">✓</span> Zero setup — open the page and you're tracking</li>
+          <li><span class="check">✓</span> Pure HTML, runs anywhere with a browser</li>
+          <li><span class="check">✓</span> Free, open source, install‑as‑PWA friendly</li>
+        </ul>
+        <div class="app-cta">
+          <a href="https://youpizzahero.github.io/delivery-tracker/" target="_blank" rel="noopener" class="btn btn-primary">Open the App</a>
+          <a href="https://github.com/YouPizzaHero/delivery-tracker" target="_blank" rel="noopener" class="btn btn-ghost">View on GitHub</a>
+        </div>
+      </div>
+      <div class="app-mock" aria-hidden="true">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="screen-bar"></div>
+            <div class="screen-title">DELIVERY TRACKER</div>
+            <div class="screen-card"></div>
+            <div class="screen-card sm"></div>
+            <div class="screen-card sm"></div>
+            <div class="screen-emoji">📦</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="about-grid">
+      <div class="about-photo" aria-hidden="true">
+        <div class="photo-frame">
+          <span class="photo-emoji">👨‍💻</span>
+        </div>
+        <div class="photo-tag">Solo Dev · Pizza Hero Gaming</div>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">About the Dev</span>
+        <h2>One person. Four games. Infinite slices.</h2>
+        <p>
+          Pizza Hero Gaming is a one‑person studio — me, a code editor, and an unreasonable
+          amount of pizza imagery. I build small, web‑first games that run in a browser tab,
+          install as PWAs, and don't ask anyone to make an account.
+        </p>
+        <p>
+          My favorite kind of game is the one you can pick up in 30 seconds and still be
+          discovering something new an hour in. <em>Wallop</em> is the flagship — a 3D
+          bullet‑heaven where you play the Pizza Delivery Hero — and the rest of the lineup
+          ranges from dark alchemist crafting to chill semi‑idle. More on the way.
+        </p>
+        <div class="skills">
+          <span class="skill">JavaScript</span>
+          <span class="skill">Three.js</span>
+          <span class="skill">HTML5</span>
+          <span class="skill">CSS</span>
+          <span class="skill">Game Design</span>
+          <span class="skill">PWA</span>
+          <span class="skill">Capacitor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="contact-card">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Let's talk shop.</h2>
+      <p>Got feedback, collab ideas, or just want to say hi? The inbox is open.</p>
+      <div class="contact-actions">
+        <a href="mailto:jemccauley822@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="https://github.com/YouPizzaHero" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/YouPizzaHero" target="_blank" rel="noopener" aria-label="GitHub" class="social">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.19a11 11 0 0 1 5.79 0c2.21-1.5 3.18-1.19 3.18-1.19.62 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://wallop-psi.vercel.app" target="_blank" rel="noopener" aria-label="Play Wallop" class="social">🎮</a>
+        <a href="mailto:jemccauley822@gmail.com" aria-label="Email" class="social">✉</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon">🍕</span>
+        <span>Pizza Hero Gaming</span>
+      </div>
+      <div class="footer-meta">
+        © <span id="year"></span> Pizza Hero Gaming · Built with love &amp; pepperoni
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Local helpers — not for the repo
+push-to-github.bat
+
+# OS / IDE noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Logs, build, deps
+*.log
+node_modules/
+dist/
+build/
