@@ -3,6 +3,24 @@
 // Current year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Split the nav brand "PIZZA HERO" into per-letter spans for the staggered
+// bounce-in (ported from the studio splash bumper).
+const brandEl = document.querySelector('.brand-name');
+if (brandEl) {
+  const text = brandEl.textContent;
+  brandEl.textContent = '';
+  [...text].forEach((ch, i) => {
+    const span = document.createElement('span');
+    if (ch === ' ') {
+      span.className = 'brand-space';
+    } else {
+      span.textContent = ch;
+      span.style.animationDelay = `${0.18 + i * 0.05}s`;
+    }
+    brandEl.appendChild(span);
+  });
+}
+
 // Reveal-on-scroll for sections and cards
 const revealTargets = document.querySelectorAll('.section, .game-card, .hero-stats');
 revealTargets.forEach(el => el.classList.add('reveal'));
