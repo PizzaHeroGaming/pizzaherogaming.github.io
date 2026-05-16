@@ -1,13 +1,13 @@
 # Pizza Hero Gaming — Studio Website
 
-The official site for [Pizza Hero Gaming](https://github.com/YouPizzaHero), a one-person indie game studio.
+The official site for [Pizza Hero Gaming](https://github.com/pizzaherogaming), a one-person indie game studio.
 
-🍕 Live site: _enable GitHub Pages to publish at_ `https://youpizzahero.github.io/PizzaHeroGaming/`
+🍕 Live site: _enable GitHub Pages to publish at_ `https://pizzaherogaming.github.io/PizzaHeroGaming/`
 
 ## What's on the site
 
-- **Four games** — [Wallop](https://github.com/YouPizzaHero/Wallop), [Alchemy — The Circle of Binding](https://github.com/YouPizzaHero/alchemy), [Dungeon Descent](https://github.com/YouPizzaHero/Dungeon-Descent), [EthanMakesIt](https://github.com/YouPizzaHero/EthanMakesIt)
-- **One app** — [delivery-tracker](https://github.com/YouPizzaHero/delivery-tracker)
+- **Four games** — [Wallop](https://github.com/pizzaherogaming/Wallop), [Alchemy — The Circle of Binding](https://github.com/pizzaherogaming/alchemy), [Dungeon Descent](https://github.com/pizzaherogaming/Dungeon-Descent), [EthanMakesIt](https://github.com/pizzaherogaming/EthanMakesIt)
+- **One app** — [delivery-tracker](https://github.com/pizzaherogaming/delivery-tracker)
 - About the dev, contact, socials
 
 ## Stack
