@@ -6,7 +6,7 @@ The official site for [Pizza Hero Gaming](https://github.com/pizzaherogaming), a
 
 ## What's on the site
 
-- **Four games** — [Wallop](https://github.com/pizzaherogaming/Wallop), [Alchemy — The Circle of Binding](https://github.com/pizzaherogaming/alchemy), [Dungeon Descent](https://github.com/pizzaherogaming/Dungeon-Descent), [EthanMakesIt](https://github.com/pizzaherogaming/EthanMakesIt)
+- **Four games** — [Wallop](https://github.com/pizzaherogaming/Wallop), [Athanor: Alchemy Merge](https://github.com/pizzaherogaming/alchemy), [Dungeon Descent](https://github.com/pizzaherogaming/Dungeon-Descent), [EthanMakesIt](https://github.com/pizzaherogaming/EthanMakesIt)
 - **One app** — [delivery-tracker](https://github.com/pizzaherogaming/delivery-tracker)
 - About the dev, contact, socials
 
