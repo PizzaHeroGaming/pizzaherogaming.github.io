@@ -505,20 +505,35 @@ a { color: inherit; text-decoration: none; }
 
 .game-card:hover .game-emoji { transform: scale(1.1) rotate(-5deg); }
 
-/* Banner-art variant — real Play Store feature graphic instead of emoji */
+/* Banner-art variant — real Play Store feature graphic instead of emoji.
+   Native ratio is 2.05:1 (1024×500). Cap height so the art block isn't
+   top-heavy at full card width, but leave enough room that the full
+   focal strip (wordmark + tagline + "190 elements · 187 recipes · 8
+   ranks" stat line) stays visible. Only the dead-space top stars and
+   the small "A PIZZA HERO GAMING PROJECT" attribution at the bottom
+   get cropped. */
 .game-art-banner {
   aspect-ratio: 1024 / 500;
-  background: #000;
+  max-height: 340px;
+  background: #0a0405;
+  display: block;
+  margin: 6px 6px 0;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .game-art-banner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
   transition: transform 0.5s ease;
 }
 .game-card:hover .game-art-banner img {
   transform: scale(1.04);
+}
+@media (max-width: 720px) {
+  .game-art-banner { max-height: 220px; margin: 4px 4px 0; }
 }
 
 .ribbon {

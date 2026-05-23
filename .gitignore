@@ -7,6 +7,7 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+.claude/
 
 # Logs, build, deps
 *.log
