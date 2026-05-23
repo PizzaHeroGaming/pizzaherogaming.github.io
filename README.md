@@ -2,7 +2,7 @@
 
 The official site for [Pizza Hero Gaming](https://github.com/pizzaherogaming), a one-person indie game studio.
 
-🍕 Live: https://pizzaherogaming.github.io/PizzaHeroGaming/
+🍕 Live: https://pizzaherogaming.github.io/
 
 ## What's on the site
 

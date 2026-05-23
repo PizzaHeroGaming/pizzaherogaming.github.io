@@ -49,6 +49,28 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
+/* Beta / testing callout (game cards) */
+.beta-callout {
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: rgba(255, 181, 71, 0.08);
+  border: 1px solid rgba(255, 181, 71, 0.25);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+.beta-callout strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+.beta-callout a {
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.beta-callout a:hover { text-decoration: underline; }
+
 /* Keyboard-only skip link */
 .skip-link {
   position: absolute;
