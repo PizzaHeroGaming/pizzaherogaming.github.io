@@ -49,6 +49,23 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
+/* Official Google Play badge (game cards) */
+.play-cta { margin-top: 4px; }
+.play-badge {
+  display: inline-block;
+  line-height: 0;
+}
+.play-badge img {
+  height: 60px;
+  width: auto;
+  display: block;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.play-badge:hover img {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
 /* Beta / testing callout (game cards) */
 .beta-callout {
   margin-top: 14px;
