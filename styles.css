@@ -49,6 +49,15 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
+/* Two-CTA row (Google Play badge + Steam button side by side) */
+.launch-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
 /* Official Google Play badge (game cards) */
 .play-cta { margin-top: 4px; }
 .play-badge {
