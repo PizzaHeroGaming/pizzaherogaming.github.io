@@ -754,7 +754,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* =========================================================
-   TOOLS (parallel to APP, with a Windows desktop window mock)
+   TOOLS (parallel to APP, with a Windows desktop window mock
+   styled to match the actual Pizza Hero Clicker app palette)
    ========================================================= */
 .tools-section { position: relative; }
 
@@ -763,7 +764,7 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-  background: linear-gradient(135deg, rgba(102, 192, 244, 0.07), rgba(255, 181, 71, 0.03));
+  background: linear-gradient(135deg, rgba(255, 181, 71, 0.08), rgba(239, 62, 91, 0.04));
   border: 1px solid var(--border);
   border-radius: 28px;
   padding: 60px;
@@ -776,14 +777,14 @@ a { color: inherit; text-decoration: none; }
   position: absolute;
   top: -100px; left: -100px;
   width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(102, 192, 244, 0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 181, 71, 0.2), transparent 70%);
   pointer-events: none;
 }
 
 .tools-copy h2 { margin-top: 12px; margin-bottom: 18px; }
 .tools-copy p { color: var(--text-dim); margin: 0 0 24px; font-size: 17px; }
 .tools-copy code {
-  font-family: 'DM Mono', Consolas, Menlo, monospace;
+  font-family: Consolas, Menlo, monospace;
   font-size: 0.9em;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -791,17 +792,17 @@ a { color: inherit; text-decoration: none; }
   border-radius: 4px;
 }
 
-/* Desktop window mockup */
+/* Desktop window mockup — Windows-style chrome, Pizza Hero Clicker look */
 .tools-mock { display: flex; justify-content: center; }
 
 .window {
   width: 100%;
-  max-width: 420px;
-  background: #0f0a08;
-  border-radius: 10px;
+  max-width: 380px;
+  background: #15100c;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6),
-              0 0 0 1px rgba(255, 255, 255, 0.03),
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.65),
+              0 0 0 1px rgba(255, 181, 71, 0.08),
               inset 0 0 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   transform: rotate(-2deg);
@@ -809,37 +810,111 @@ a { color: inherit; text-decoration: none; }
 }
 .window:hover { transform: rotate(0deg) scale(1.02); }
 
+/* Title bar — Windows style: icon left, title, min/max/close controls right */
 .window-bar {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
+  padding: 8px 4px 8px 12px;
   background: linear-gradient(180deg, #1a110d, #130c08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 181, 71, 0.08);
+  gap: 10px;
 }
-
-.window-dot {
-  width: 11px; height: 11px; border-radius: 50%;
-  display: inline-block;
+.window-icon {
+  font-size: 14px;
+  filter: drop-shadow(0 1px 2px rgba(255, 90, 60, 0.5));
 }
-.window-dot.red    { background: #ff5f57; }
-.window-dot.amber  { background: #febc2e; }
-.window-dot.green  { background: #28c840; }
-
 .window-title {
-  margin-left: 12px;
   font-family: 'Outfit', sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-size: 12px;
   color: var(--text-dim);
+  flex: 1;
 }
+.window-controls {
+  display: flex;
+  gap: 2px;
+}
+.window-ctrl {
+  width: 32px; height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--text-dim);
+  font-family: 'Outfit', sans-serif;
+  line-height: 1;
+}
+.window-close { color: rgba(255, 255, 255, 0.5); }
 
+/* Body */
 .window-body {
-  padding: 20px 20px 24px;
+  padding: 18px 18px 20px;
   display: flex;
   flex-direction: column;
+  gap: 14px;
+}
+
+/* The in-app "PIZZA HERO CLICKER" wordmark */
+.window-brand {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  text-align: center;
+  padding: 4px 0 8px;
+}
+.window-brand-accent { color: var(--primary); }
+
+/* Green START button to match the real app */
+.window-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
+  padding: 12px;
+  background: linear-gradient(180deg, #1f6b2e, #164d20);
+  border: 1px solid #2f8a3f;
+  border-radius: 6px;
+  color: #d9f5df;
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 2px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.window-start kbd {
+  font-family: Consolas, Menlo, monospace;
+  font-size: 10px;
+  padding: 2px 6px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+  color: #d9f5df;
+  letter-spacing: 0;
+}
+.window-start-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #6ee7c7;
+  box-shadow: 0 0 8px rgba(110, 231, 199, 0.75);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+/* LIVE STATS panel — mirrors the actual app's dark bordered panel */
+.window-stats {
+  background: rgba(255, 181, 71, 0.03);
+  border: 1px solid rgba(255, 181, 71, 0.15);
+  border-radius: 6px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.window-stats-title {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(255, 181, 71, 0.1);
+  margin-bottom: 2px;
 }
 
 .window-row {
@@ -847,60 +922,16 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 10px 14px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  font-size: 13px;
-}
-
-.window-pill {
+  padding: 4px 0;
+  font-size: 12px;
   color: var(--text-dim);
 }
 
 .window-value {
-  font-family: 'DM Mono', Consolas, Menlo, monospace;
-  color: var(--text);
+  font-family: Consolas, Menlo, monospace;
+  color: var(--accent);
   font-size: 12px;
 }
-
-.window-value.window-live {
-  color: #6ee7c7;
-  position: relative;
-  padding-left: 14px;
-}
-.window-value.window-live::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 50%;
-  transform: translateY(-50%);
-  width: 7px; height: 7px; border-radius: 50%;
-  background: #6ee7c7;
-  box-shadow: 0 0 8px rgba(110, 231, 199, 0.75);
-  animation: pulse 1.6s ease-in-out infinite;
-}
-
-.window-chart {
-  display: flex;
-  align-items: flex-end;
-  gap: 6px;
-  height: 60px;
-  margin-top: 6px;
-  padding: 10px 14px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-}
-.window-chart .bar {
-  flex: 1;
-  background: linear-gradient(180deg, #66c0f4, rgba(102, 192, 244, 0.25));
-  border-radius: 2px 2px 0 0;
-}
-.window-chart .b1 { height: 38%; }
-.window-chart .b2 { height: 62%; }
-.window-chart .b3 { height: 45%; }
-.window-chart .b4 { height: 85%; }
-.window-chart .b5 { height: 70%; }
 
 /* =========================================================
    ABOUT
